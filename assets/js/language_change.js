@@ -22,7 +22,7 @@
 
 function change_language(jQ, lan){
     change_lanText(jQ, lan)
-    //change_cvlink(jQ, lan)
+    change_cvlink(jQ, lan)
 }
 
 function change_lanText(jQ, lan){
@@ -36,12 +36,12 @@ function change_lanText(jQ, lan){
 }
 
 function change_cvlink(jQ, lan){
-    // var new_cvfilename = `assets/cv/${lan}_Cv.pdf`
-    // jQ.get(new_cvfilename)
-    // .done(function() { 
-    //     jQ('#cv_download').attr("href", new_cvfilename);
-    // }).fail(function() { 
-    //     console.log(`${cvfilename} does not exist`)
-    // })
+    var new_cvfilename = `assets/cv/${lan}_CV_Andres.pdf`
+    jQ.get(new_cvfilename)
+    .done(function() { 
+        jQ('#cv_download').attr("href", new_cvfilename);
+    }).fail(function() { 
+        console.log(`${cvfilename} does not exist`)
+    })
 
 }
